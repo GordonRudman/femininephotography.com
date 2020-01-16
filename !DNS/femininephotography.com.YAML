@@ -1,0 +1,36 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: femininephotography.com.
+rrdatas:
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
+ttl: 60
+type: A
+---
+kind: dns#resourceRecordSet
+name: femininephotography.com.
+rrdatas:
+- 10 mx1.improvmx.com.
+- 20 mx2.improvmx.com.
+ttl: 60
+type: MX
+---
+kind: dns#resourceRecordSet
+name: _domainconnect.femininephotography.com.
+rrdatas:
+- connect.domains.google.com.
+ttl: 21600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: www.femininephotography.com.
+rrdatas:
+- gordonrudmann.github.io.
+ttl: 60
+type: CNAME
